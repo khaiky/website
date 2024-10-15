@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background-image: url("https://thumbs.dreamstime.com/b/pet-store-illustration-illustration-pet-store-168176197.jpg");
+            background-image: url("https://img.freepik.com/free-vector/abstract-white-tone-memphis-social-background_53876-113860.jpg?w=1380&t=st=1728355011~exp=1728355611~hmac=a0795b2e1e02200c90fcd65d1169b06d58e1680e958507f9bfc0bb8d23e52e95");
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
@@ -83,33 +83,36 @@
             color: black;
         }
 
-        .applet-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-        }
-
-        .applet {
+        .contact-form {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             padding: 20px;
-            width: 30%;
+            max-width: 400px;
+            margin: 0 auto;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
         }
 
-        .applet img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
-        .applet h2 {
-            color: #333;
+        .contact-form button {
+            background-color: rgb(197, 114, 114);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
-        .applet p {
-            color: #555;
+        .contact-form button:hover {
+            background-color: rgb(24, 24, 17);
         }
 
         footer {
@@ -142,36 +145,25 @@
         </div>
         <div class="header-right">
             <a href="about.html">About us</a>
-            <a href="contact.html">Contact us</a>
-            <a class="active" href="index.html">Home</a>
-            <a href="logOut.html">Log out</a>
+            <a class="active" href="contact.html">Contact us</a>
+            <a href="index.html">Home</a>
+            <a href="login.html">Log out</a>
         </div>
     </div>
 
     <div class="main-content">
-        <h1>Types of Cats!</h1>
-    </div>
-
-    <div class="applet-container">
-        <div class="applet">
-            <img src="https://media.licdn.com/dms/image/v2/D4E12AQEp2QpKSuaX1w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699004902187?e=2147483647&v=beta&t=WzoiIYDbVlG9zxl219njiOlLtMbtdEcnAsUlbTA6EGU" alt="Applet 1 Image">
-            <h2>Teacup puppy</h2>
-            <p>Teacup Puppy: The Perfect Pocket-Sized Companion! Teacup puppies are irresistibly adorable and incredibly affectionate little companions, typically weighing under 5 pounds. Known for their tiny size and big personalities, these pups are perfect for those who want a loyal friend without needing a lot of space. Their playful nature and loving demeanor make them ideal for families, singles, or seniors alike. With proper care and training, teacup puppies can bring endless joy and companionship to your life!
-                
-                </p>
-        </div>
-        <div class="applet">
-            <img src="https://storage.googleapis.com/pod_public/1300/184343.jpg" alt="Applet 2 Image">
-            <h2>Siberian Husky</h2>
-            <p>Siberian Huskies are strikingly beautiful, with their iconic blue or multicolored eyes and thick double coats. Known for their friendly and outgoing nature, these intelligent and energetic dogs thrive on exercise and companionship. Originally bred as sled dogs, Huskies are playful, social, and great with families, making them the perfect adventure buddy. With a strong pack mentality, they love being part of a family and enjoy activities like running, hiking, and playing in the snow.</p>
-        </div>
-        <div class="applet">
-            <img src="https://www.thesprucepets.com/thmb/17UY4UpiMekV7WpeXDziXsnt7q4=/1646x0/filters:no_upscale():strip_icc()/GettyImages-145577979-d97e955b5d8043fd96747447451f78b7.jpg" alt="Applet 3 Image">
-            <h2>Ragdoll</h2>
-            <p>The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. American breeder Ann Baker developed Ragdolls in the 1960s. They are best known for their docile, placid temperament and affectionate nature.</p>
+        <h1>Contact Us</h1>
+        <p>If you are interested in adopting or buying a cat, please fill out the form below:</p>
+        
+        <div class="contact-form">
+            <form action="submit_contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Cat Cafe. All rights reserved.</p>
         <p>Follow us on:
