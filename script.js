@@ -12,4 +12,5 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
     } else {
         alert('Invalid username or password');
     }
+
 });

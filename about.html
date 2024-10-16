@@ -3,130 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-    <style>
-        body{
-    background-image: url(https://thumbs.dreamstime.com/b/pet-store-illustration-illustration-pet-store-168176197.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-h1{
-    color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 100px;
-}.header {
-    overflow: hidden;
-    /*padding: 20px 10px;*/
-  }
-  
-  .header img{
-    height: 50px;
-    width: 50px;
-  }
-  
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .header a.active {
-    background-color: white;
-    color: black;
-    
-  }
-  
-  /* Float the link section to the right */
-  .header-Right {
-    float: right;
-  }
+    <title>My Webpage</title>
 
-  .footer{
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  #content{
-    color: maroon;
-    text-align: justify;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 75px;
-  }
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/16/7f/b6/167fb6444baa55441681a208a5d63e21.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between; 
+            background-color: rgba(89, 84, 92, 0.425);
+            padding: 10px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px; 
+        }
+
+        .header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .header a {
+            float: left;
+            color: rgb(2, 1, 1);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: rgb(197, 114, 114);
+            color: rgb(0, 11, 49);
+        }
+
+        .header a.active {
+            background-color: rgb(24, 24, 17);
+            color: white;
+        }
+
+        .logo-text {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none; 
+            font-size: 24px; 
+            color: #080808; 
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+
+        .applet-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .applet {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .applet img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .applet h2 {
+            color: #333;
+        }
+
+        .applet p {
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(89, 84, 92, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
+
 </head>
 <body>
-    <head>
-        <title>Sample cv </title>
-        <link rel="stylesheet" type="text/css" href="index-style.css" media="screen">
-        </head>
-        
-        
-        <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-            <header>
-                <div class="header">
-                    <div class="header-Left">
-                        <a href="index.html" class="logo">About us</a>
-                    </div>
-                <div class="header-Right">
-                    <a href="about.html">About</a>
-                    <a class="active" href="Homepage.html">Home</a>
-                </div>
-            </div>
-        
-            </header>
-        
-            <section>
-                   <h1></h1>
-                   <br>
-                   <h2 style="color: black">Welcome to Paw Patrol, where every pet is treated like family! Established in 2023, our passion for animals drives us to provide the best products and services for pet lovers in Manolo Fortich, Bukidnon.
-
-                    At Paw Patrol, we believe that pets bring joy, companionship, and unconditional love into our lives. That’s why we’re dedicated to offering a wide selection of healthy, happy pets—from playful puppies and affectionate kittens to delightful small animals and exotic fish. Our commitment to responsible breeding and adoption means that you can find your perfect furry (or scaly) friend while supporting ethical practices.
-                    
-                    Our knowledgeable and friendly staff are pet enthusiasts who are always here to share their expertise and passion. Whether you’re looking for advice on pet care, nutrition, or training, we’re here to help you make informed decisions for your beloved companions.
-                    
-                    In addition to our diverse selection of pets, we carry a comprehensive range of high-quality pet supplies, including premium food, toys, grooming products, and accessories. We take pride in sourcing only the best brands to ensure your pets receive the care they deserve.
-                    
-                    At Paw Patrol, we also believe in giving back to our community. We regularly host adoption events, workshops, and pet fairs to promote responsible pet ownership and support local animal shelters. Together, we can make a positive impact on the lives of animals in need.
-                    
-                    Thank you for choosing Paw Patrol as your trusted pet partner. We look forward to helping you create lasting memories with your furry friends!
-                    
-                    </h2>
-                    </strong></li>
-                </section>
-        
-                <footer class="">
-                    <div class="footer">
-                        © Copyright <strong><span>PAW PATROL</span></strong>. All Rights Reserved
-                    </div>
-                </footer>
-            
-            
-            
-            </body>
+    <div class="header">
+        <div class="header-left">
+            <img src="https://marketplace.canva.com/EAFakJi99JY/2/0/1600w/canva-simple-minimalist-one-line-dog-cat-logo-lDgYRXxyplI.jpg" alt="Logo" class="logo">
+            <a href="index.html" class="logo-text">Khai</a>
+        </div>
+        <div class="header-right">
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="logOut.html">Log out</a>
+        </div>
+      </div>
+    <div class="applet-container">
+        <div class="applet">
+            <img src="https://marketplace.canva.com/EAFakJi99JY/2/0/1600w/canva-simple-minimalist-one-line-dog-cat-logo-lDgYRXxyplI.jpg" alt="Applet 1 Image">
+            <h2>PAW PATROL PET SHOP</h2>
+            <p>Welcome to Paw Patrol, where every pet is treated like family! Established in 2023, our passion for animals drives us to provide the best products and services for pet lovers in Manolo Fortich, Bukidnon.
+              At Paw Patrol, we believe that pets bring joy, companionship, and unconditional love into our lives. That’s why we’re dedicated to offering a wide selection of healthy, happy pets—from playful puppies and affectionate kittens to delightful small animals and exotic fish. Our commitment to responsible breeding and adoption means that you can find your perfect furry (or scaly) friend while supporting ethical practices.
+              Our knowledgeable and friendly staff are pet enthusiasts who are always here to share their expertise and passion. Whether you’re looking for advice on pet care, nutrition, or training, we’re here to help you make informed decisions for your beloved companions.
+              In addition to our diverse selection of pets, we carry a comprehensive range of high-quality pet supplies, including premium food, toys, grooming products, and accessories. We take pride in sourcing only the best brands to ensure your pets receive the care they deserve
+              At Paw Patrol, we also believe in giving back to our community. We regularly host adoption events, workshops, and pet fairs to promote responsible pet ownership and support local animal shelters. Together, we can make a positive impact on the lives of animals in need.
+              Thank you for choosing Paw Patrol as your trusted pet partner. We look forward to helping you create lasting memories with your furry friends!</p>
+        </div>
+    </footer>
+</body>
+</html>
