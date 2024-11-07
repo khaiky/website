@@ -7,6 +7,7 @@
 
     <style>
         body {
+            background-color: #cfe1b9;;
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
@@ -52,13 +53,12 @@
         }
 
         .header a:hover {
-            background-color: rgb(197, 114, 114);
+            background-color: white;
             color: rgb(0, 11, 49);
         }
 
         .header a.active {
-            background-color: rgb(24, 24, 17);
-            color: white;
+            color: black;
         }
 
         .logo-text {
@@ -69,6 +69,8 @@
         }
 
         .main-content {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
             text-align: center;
             margin-top: 50px;
             color: white;
@@ -83,8 +85,8 @@
         }
 
         .contact-form {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
+            background-color: #b5c99a;
+            border-radius: 20px;
             padding: 20px;
             max-width: 400px;
             margin: 0 auto;
@@ -101,7 +103,8 @@
         }
 
         .contact-form button {
-            background-color: rgb(197, 114, 114);
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
             color: white;
             border: none;
             padding: 10px;
@@ -112,26 +115,6 @@
 
         .contact-form button:hover {
             background-color: rgb(24, 24, 17);
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 
@@ -145,14 +128,16 @@
         <div class="header-right">
             <a href="about.html">About us</a>
             <a class="active" href="contact.html">Contact us</a>
-            <a href="Homepage.html">Home</a>
+            <a href="index.html">Home</a>
+            <a href="Highlight.html">Highlights</a>
             <a href="logOut.html">Log out</a>
         </div>
     </div>
 
     <div class="main-content">
         <h1>Contact Us</h1>
-        <p>If you are interested in adopting or buying some pets, please fill out the form below:</p>
+        <p>If you are interested in buying our pets or our products please visit our store, or message us on our social media flatform
+        </p>
         
         <div class="contact-form">
             <form action="submit_contact.php" method="POST">
@@ -163,13 +148,5 @@
             </form>
         </div>
     </div>
-    <footer>
-        <p>&copy; Khai's Pet Shop. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
-        </p>
-    </footer>
 </body>
 </html>

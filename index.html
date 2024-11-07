@@ -7,6 +7,7 @@
 
     <style>
         body {
+            background-color: #cfe1b9;
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +16,7 @@
         .header {
             display: flex;
             justify-content: space-between; 
-            background-color: rgba(89, 84, 92, 0.425);
+            background-color: #cfe1b9;
             padding: 10px;
         }
 
@@ -52,13 +53,12 @@
         }
 
         .header a:hover {
-            background-color: rgb(197, 114, 114);
+            background-color:white;
             color: rgb(0, 11, 49);
         }
 
         .header a.active {
-            background-color: rgb(24, 24, 17);
-            color: white;
+            color: black;
         }
 
         .logo-text {
@@ -69,6 +69,9 @@
         }
 
         .main-content {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
             text-align: center;
             margin-top: 50px;
             color: white;
@@ -83,18 +86,21 @@
         }
 
         .applet-container {
+            margin-left: 3rem;
+            margin-right: 3rem;
             display: flex;
             justify-content: space-around;
             margin-top: 50px;
         }
 
         .applet {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: #b5c99a;
             border-radius: 10px;
             padding: 20px;
             width: 30%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
+            margin-left: .5rem;
         }
 
         .applet img {
@@ -110,26 +116,6 @@
         .applet p {
             color: #555;
         }
-
-        footer {
-            background-color: rgba(89, 84, 92, 0.8);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 
 </head>
@@ -143,21 +129,20 @@
             <a href="about.html">About us</a>
             <a href="contact.html">Contact us</a>
             <a class="active" href="index.html">Home</a>
+            <a href="Highlight.html">Highlights</a>
             <a href="logOut.html">Log out</a>
         </div>
     </div>
 
     <div class="main-content">
-        <h1>Types of Pets in our store</h1>
+        <h1>TYPES OF PETS IN OUR STORE</h1>
     </div>
 
     <div class="applet-container">
         <div class="applet">
             <img src="https://media.licdn.com/dms/image/v2/D4E12AQEp2QpKSuaX1w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699004902187?e=2147483647&v=beta&t=WzoiIYDbVlG9zxl219njiOlLtMbtdEcnAsUlbTA6EGU" alt="Applet 1 Image">
             <h2>Teacup puppy</h2>
-            <p>Teacup Puppy: The Perfect Pocket-Sized Companion! Teacup puppies are irresistibly adorable and incredibly affectionate little companions, typically weighing under 5 pounds. Known for their tiny size and big personalities, these pups are perfect for those who want a loyal friend without needing a lot of space. Their playful nature and loving demeanor make them ideal for families, singles, or seniors alike. With proper care and training, teacup puppies can bring endless joy and companionship to your life!
-                
-                </p>
+            <p>Teacup Puppy: The Perfect Pocket-Sized Companion! Teacup puppies are irresistibly adorable and incredibly affectionate little companions, typically weighing under 5 pounds. Known for their tiny size and big personalities, these pups are perfect for those who want a loyal friend without needing a lot of space. Their playful nature and loving demeanor make them ideal for families, singles, or seniors alike. With proper care and training, teacup puppies can bring endless joy and companionship to your life!</p>
         </div>
         <div class="applet">
             <img src="https://storage.googleapis.com/pod_public/1300/184343.jpg" alt="Applet 2 Image">
@@ -170,15 +155,10 @@
             <p>The Shih Tzu is a small, Long-haired breed of dog known for it's luxurios, flowing coat and sweet, playful personality. They are considered toy dogs and are known for their gentle, affectionate nature. Shih Tzu makes excellent companions and are often described as "little lions" due to their distinctive facial features. They are intelligent and eager to please making them relatively easy to train.
             </p>
         </div>
+        <div class="applet">
+            <img src="https://petcityhouston.com/wp-content/uploads/2022/08/robo-dwarf-hamster.jpg" alt="Applet 3 Image">
+            <h2>Rovorovski Dwarf Hamster</h2>
+            <p>The Roborovski dwarf hamster is a small, lively pet known for its playful and curious nature. Typically measuring around 4 inches in length, these hamsters have a sandy or light brown coat with distinctive white markings on their faces and bellies. They are social creatures that thrive in pairs or small groups, making them a delightful addition to any home. With their energetic antics and gentle demeanor, Roborovski dwarf hamsters are perfect for both novice and experienced pet owners.</p>
     </div>
-
-    <footer>
-        <p>&copy; Khai's Pet Shop. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="#">Facebook</a> 
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </p>
-    </footer>
 </body>
 </html>
